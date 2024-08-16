@@ -1,7 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { IoColorFilterOutline } from "react-icons/io5";
 import { AuthContext } from '../FirebaseProbider/FirbaseProvider';
-
+import { IoIosLogOut } from "react-icons/io";
 export default function Header() {
   const [isLogin, setLogin] = useState(false);
   const { logOut, usern } = useContext(AuthContext);
@@ -18,19 +17,14 @@ export default function Header() {
         </div>
         {isLogin ? (
           <div className="flex-none gap-2">
-            <div className="form-control">
-              <input type="text" placeholder="Search" className="input input-sm input-bordered w-24 md:w-auto" />
-            </div>
+           
             <div className="dropdown dropdown-end">
               <div tabIndex={0} role="button" className="btn btn-sm btn-ghost avatar">
-                <IoColorFilterOutline className='text-xl' />
+                <IoIosLogOut className='text-xl font-semibold text-red-600' />
               </div>
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                <li><a>Settings</a></li>
-                <li><a>Settings</a></li>
-                <li><a>Settings</a></li>
                 <li><a onClick={logOut}>Logout</a></li>
               </ul>
             </div>
