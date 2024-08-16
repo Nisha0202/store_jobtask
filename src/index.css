@@ -12,7 +12,7 @@ body{
   padding: 0px;
   margin: 0px auto;
   min-height: 80svh;
-  /* background-color: #f5f5f5; */
+  padding: 0px 4px;
 }
 
 .imprima {
