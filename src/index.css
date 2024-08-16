@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background-color: #ffffff;
+  color: rgb(16, 16, 16);
+}
+.container{
+  max-width: 1150px;
+  min-width: 300px;
+  padding: 0px;
+  margin: 0px auto;
+  min-height: 80svh;
+  /* background-color: #f5f5f5; */
+}
+
+.imprima {
+  font-family: "Imprima", sans-serif;
+}

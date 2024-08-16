@@ -1,0 +1,424 @@
+[
+  {
+    "productName": "Wireless Earbuds",
+    "productImage": "https://i.pinimg.com/564x/fa/ee/fc/faeefcc94870fd2eb41273762162022c.jpg",
+    "description": "High-quality wireless earbuds with noise-cancellation and long battery life.",
+    "price": 59.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "creationDate": "2024-08-01T03:08 AM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Stainless Steel Water Bottle",
+    "productImage": "https://i.pinimg.com/564x/83/d6/07/83d607d9dc9565a74715d0b21fee963b.jpg",
+    "description": "Durable and insulated stainless steel water bottle, perfect for outdoor activities.",
+    "price": 24.99,
+    "category": "Outdoor",
+    "ratings": 4.8,
+    "creationDate": "2024-08-02T10:15 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Bluetooth Speaker",
+    "productImage": "https://i.pinimg.com/564x/ba/3d/3a/ba3d3aaf2370f7d616d1d7705e383ca1.jpg",
+    "description": "Portable Bluetooth speaker with rich sound and deep bass.",
+    "price": 39.99,
+    "category": "Electronics",
+    "ratings": 4.2,
+    "creationDate": "2024-08-03T11:30 AM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Yoga Mat",
+    "productImage": "https://i.pinimg.com/564x/c5/87/76/c58776c017e7d56ca4141e6db6a0a0ab.jpg",
+    "description": "Eco-friendly yoga mat with excellent grip and cushioning.",
+    "price": 29.99,
+    "category": "Fitness",
+    "ratings": 4.6,
+    "creationDate": "2024-08-04T09:00 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Running Shoes",
+    "productImage": "https://i.pinimg.com/736x/b0/a6/44/b0a64493bd75ff715cfa2207b1ac3ad6.jpg",
+    "description": "Lightweight and comfortable running shoes for daily exercise.",
+    "price": 79.99,
+    "category": "Footwear",
+    "ratings": 4.7,
+    "creationDate": "2024-08-05T08:00 AM",
+    "brandName": "FitPro"
+
+  },
+  {
+    "productName": "Smartwatch",
+    "productImage": "https://i.pinimg.com/564x/3e/5f/17/3e5f17f41cbdfab7aa51fc4af6dca94c.jpg",
+    "description": "Stylish smartwatch with fitness tracking and notifications.",
+    "price": 129.99,
+    "category": "Wearables",
+    "ratings": 4.3,
+    "creationDate": "2024-08-06T02:25 PM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Gaming Mouse",
+    "productImage": "https://i.pinimg.com/564x/a0/26/07/a02607e75ead6707c7f456d077818eea.jpg",
+    "description": "Ergonomic gaming mouse with customizable buttons and RGB lighting.",
+    "price": 49.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "creationDate": "2024-08-07T06:45 PM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "LED Desk Lamp",
+    "productImage": "https://i.pinimg.com/564x/65/ac/c6/65acc6169f46008c3785e63b3afe50c1.jpg",
+    "description": "Adjustable LED desk lamp with touch controls and USB charging port.",
+    "price": 34.99,
+    "category": "Home",
+    "ratings": 4.5,
+    "creationDate": "2024-08-08T03:00 PM",
+    "brandName": "FitPro"
+  },
+  {
+    "productName": "Electric Toothbrush",
+    "productImage": "https://i.pinimg.com/564x/41/c0/86/41c086fa31300b1098c27dbc494983b3.jpg",
+    "description": "Rechargeable electric toothbrush with multiple brushing modes.",
+    "price": 59.99,
+    "category": "Health",
+    "ratings": 4.7,
+    "creationDate": "2024-08-09T07:15 AM",
+    "brandName": "FitPro"
+  },
+  {
+    "productName": "Wireless Charger",
+    "productImage": "https://i.pinimg.com/564x/62/48/f4/6248f4c442b275ada68bba1a8a68d80d.jpg",
+    "description": "Fast wireless charger compatible with most smartphones.",
+    "price": 29.99,
+    "category": "Electronics",
+    "ratings": 4.2,
+    "creationDate": "2024-08-10T05:50 AM",
+    "brandName": "GourmetPal"
+  },
+  {
+    "productName": "Silent Headphones",
+    "productImage": "https://i.pinimg.com/564x/16/10/56/161056516051d873454aa1a75a0f15ed.jpg",
+    "description": "Over-ear headphones with active noise-cancelling technology.",
+    "price": 99.99,
+    "category": "Electronics",
+    "ratings": 4.6,
+    "creationDate": "2024-08-11T03:30 AM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Laptop Stand",
+    "productImage": "https://i.pinimg.com/564x/25/45/2a/25452ade81562fd293742c229b7c34c5.jpg",
+    "description": "Adjustable laptop stand for comfortable working posture.",
+    "price": 39.99,
+    "category": "Office",
+    "ratings": 4.4,
+    "creationDate": "2024-08-12T04:30 PM",
+    "brandName": "FitPro"
+  },
+  {
+    "productName": "Backpack",
+    "productImage": "https://i.pinimg.com/564x/01/0a/3d/010a3d509f8043aeaa7bfc32547edf30.jpg",
+    "description": "Spacious and durable backpack with multiple compartments.",
+    "price": 49.99,
+    "category": "Accessories",
+    "ratings": 4.5,
+    "creationDate": "2024-08-13T09:20 AM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Kitchen Knife Set",
+    "productImage": "https://i.pinimg.com/564x/70/89/2f/70892f53d4e4f285dabd30f62ec5085e.jpg",
+    "description": "High-quality stainless steel kitchen knife set with a wooden block.",
+    "price": 89.99,
+    "category": "Home",
+    "ratings": 4.8,
+    "creationDate": "2024-08-14T06:10 PM",
+    "brandName": "GourmetPal"
+  },
+  {
+    "productName": "Portable Blender",
+    "productImage": "https://i.pinimg.com/564x/e1/8c/dc/e18cdc4bb526bca5d735d2a8c03dac2a.jpg",
+    "description": "Compact and portable blender for smoothies and shakes on the go.",
+    "price": 39.99,
+    "category": "Kitchen",
+    "ratings": 4.3,
+    "creationDate": "2024-08-15T08:05 AM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Fitness Tracker",
+    "productImage": "https://i.pinimg.com/564x/1e/1e/8a/1e1e8a717cfe2777bbdb57b8eb03c1dc.jpg",
+    "description": "Waterproof fitness tracker with heart rate monitoring and sleep tracking.",
+    "price": 59.99,
+    "category": "Wearables",
+    "ratings": 4.4,
+    "creationDate": "2024-08-16T11:30 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Smart Home Hub",
+    "productImage": "https://i.pinimg.com/564x/79/16/7d/79167d120873b9c213bd9e2aadc0fd4d.jpg",
+    "description": "Smart home hub to control all your smart devices in one place.",
+    "price": 99.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "creationDate": "2024-08-17T02:45 PM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Coffee Maker",
+    "productImage": "https://i.pinimg.com/564x/09/52/bc/0952bc9cb9796e0f4f748d7ccd4ec4e9.jpg",
+    "description": "Automatic coffee maker with multiple brewing options and a timer.",
+    "price": 79.99,
+    "category": "Kitchen",
+    "ratings": 4.6,
+    "creationDate": "2024-08-18T10:00 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Electric Kettle",
+    "productImage": "https://i.pinimg.com/564x/0b/0e/80/0b0e8064b90468e9db50518cd0e57348.jpg",
+    "description": "Fast-boiling electric kettle with auto shut-off and boil-dry protection.",
+    "price": 29.99,
+    "category": "Kitchen",
+    "ratings": 4.7,
+    "creationDate": "2024-08-19T03:25 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Air Fryer",
+    "productImage": "https://i.pinimg.com/736x/e9/ad/3e/e9ad3e958657a88b2617e8e528829f23.jpg",
+    "description": "Healthy air fryer with adjustable temperature control and a large cooking capacity.",
+    "price": 119.99,
+    "category": "Kitchen",
+    "ratings": 4.8,
+    "creationDate": "2024-08-20T07:10 AM",
+    "brandName": "FitPro"
+  },
+  {
+    "productName": "Wireless Mouse",
+    "productImage": "https://i.pinimg.com/564x/4c/8b/71/4c8b71f50f06d76a17385f740d35d6e9.jpg",
+    "description": "Compact wireless mouse with ergonomic design and long battery life.",
+    "price": 25.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "creationDate": "2024-08-21T08:45 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Travel Mug",
+    "productImage": "https://i.pinimg.com/564x/c6/da/0f/c6da0fbbe83e887361989010e501fc90.jpg",
+    "description": "Insulated travel mug that keeps beverages hot or cold for hours.",
+    "price": 19.99,
+    "category": "Kitchen",
+    "ratings": 4.7,
+    "creationDate": "2024-08-22T07:30 AM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Portable Power Bank",
+    "productImage": "https://i.pinimg.com/564x/8d/14/22/8d142222173bfd83204c3d2304efe45a.jpg",
+    "description": "High-capacity portable power bank with multiple USB ports.",
+    "price": 39.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "creationDate": "2024-08-23T09:00 AM",
+    "brandName": "FitPro"
+  },
+  {
+    "productName": "Smart Thermostat",
+    "productImage": "https://i.pinimg.com/736x/47/e3/9a/47e39aaa4a3e22c5b2a060716d8f76c2.jpg",
+    "description": "Smart thermostat that can be controlled remotely via a mobile app.",
+    "price": 149.99,
+    "category": "Home",
+    "ratings": 4.6,
+    "creationDate": "2024-08-24T10:15 AM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Wireless Keyboard",
+    "productImage": "https://i.pinimg.com/564x/8b/43/84/8b4384f82b617505599e878b4e234f02.jpg",
+    "description": "Sleek wireless keyboard with silent keys and long battery life.",
+    "price": 49.99,
+    "category": "Electronics",
+    "ratings": 4.3,
+    "creationDate": "2024-08-25T11:45 AM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Electric Shaver",
+    "productImage": "https://i.pinimg.com/564x/25/17/e3/2517e309723340ab077594ff9a7c5d57.jpg",
+    "description": "Rechargeable electric shaver with precision blades and a flexible head.",
+    "price": 89.99,
+    "category": "Health",
+    "ratings": 4.7,
+    "creationDate": "2024-08-26T12:30 PM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Wireless Headphones",
+    "productImage": "https://i.pinimg.com/564x/49/56/45/49564561e58b88a4db4d2801196aac4c.jpg",
+    "description": "Over-ear wireless headphones with deep bass and long battery life.",
+    "price": 99.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "creationDate": "2024-08-27T01:45 PM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Digital Camera",
+    "productImage": "https://i.pinimg.com/564x/2e/50/38/2e5038ad5cea642663eddc9a162388a3.jpg",
+    "description": "High-resolution digital camera with a powerful zoom and multiple shooting modes.",
+    "price": 499.99,
+    "category": "Electronics",
+    "ratings": 4.8,
+    "creationDate": "2024-08-28T02:30 PM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Bluetooth Earbuds",
+    "productImage": "https://i.pinimg.com/564x/93/b4/2d/93b42da0c6761d081824a39767d38d83.jpg",
+    "description": "Compact Bluetooth earbuds with excellent sound quality and noise isolation.",
+    "price": 69.99,
+    "category": "Electronics",
+    "ratings": 4.4,
+    "creationDate": "2024-08-29T03:00 PM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Electric Toothbrush",
+    "productImage": "https://i.pinimg.com/564x/28/47/cc/2847cce73e08942d26d958741402837b.jpg",
+    "description": "Rechargeable electric toothbrush with multiple brushing modes and a timer.",
+    "price": 59.99,
+    "category": "Health",
+    "ratings": 4.6,
+    "creationDate": "2024-08-30T04:15 PM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Laptop Sleeve",
+    "productImage": "https://i.pinimg.com/564x/90/95/af/9095af2f578b6a53d533d1170e0d25d9.jpg",
+    "description": "Padded laptop sleeve with a zipper closure and a slim design.",
+    "price": 29.99,
+    "category": "Accessories",
+    "ratings": 4.5,
+    "creationDate": "2024-08-31T05:00 PM",
+    "brandName": "GourmetPal"
+  },
+  {
+    "productName": "Smart Light Bulb",
+    "productImage": "https://i.pinimg.com/564x/38/9e/12/389e123f8d8493910c7882e0000b51ba.jpg",
+    "description": "Energy-efficient smart light bulb with customizable colors and brightness.",
+    "price": 19.99,
+    "category": "Home",
+    "ratings": 4.4,
+    "creationDate": "2024-09-01T06:10 PM",
+    "brandName": "UrbanStyle"
+  },
+  {
+    "productName": "Air Purifier",
+    "productImage": "https://i.pinimg.com/564x/58/b0/d7/58b0d7b28faf968cc046eed6009b0785.jpg",
+    "description": "Compact air purifier with HEPA filter and multiple fan speeds.",
+    "price": 129.99,
+    "category": "Home",
+    "ratings": 4.7,
+    "creationDate": "2024-09-02T07:20 PM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Fitness Resistance Bands",
+    "productImage": "https://i.pinimg.com/564x/c3/c1/c5/c3c1c53680b2e997b5d349abdc484a6a.jpg",
+    "description": "Set of resistance bands for home workouts and strength training.",
+    "price": 24.99,
+    "category": "Fitness",
+    "ratings": 4.6,
+    "creationDate": "2024-09-03T08:00 PM",
+    "brandName": "GourmetPal"
+  },
+  {
+    "productName": "Smart Doorbell",
+    "productImage": "https://i.pinimg.com/564x/35/7a/14/357a1457b298a7267c644df896848bc1.jpg",
+    "description": "Smart doorbell with video recording and two-way communication.",
+    "price": 149.99,
+    "category": "Home",
+    "ratings": 4.7,
+    "creationDate": "2024-09-04T09:10 PM",
+    "brandName": "GourmetPal"
+  },
+  {
+    "productName": "Instant Pot",
+    "productImage": "https://i.pinimg.com/564x/bd/ec/7c/bdec7c216e646fdb0715388d96d45040.jpg",
+    "description": "Multi-functional electric pressure cooker with multiple cooking modes.",
+    "price": 89.99,
+    "category": "Kitchen",
+    "ratings": 4.8,
+    "creationDate": "2024-09-05T10:25 PM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Electric Grill",
+    "productImage": "https://i.pinimg.com/736x/db/9d/c9/db9dc9e4e6d9432657fd0c15a3b124d9.jpg",
+    "description": "Indoor electric grill with non-stick plates and adjustable temperature control.",
+    "price": 69.99,
+    "category": "Kitchen",
+    "ratings": 4.5,
+    "creationDate": "2024-09-06T11:00 PM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Electric Scooter",
+    "productImage": "https://i.pinimg.com/564x/5d/a2/5e/5da25e79ed03a713e4ddd86fc699ac64.jpg",
+    "description": "Foldable electric scooter with long battery life and a powerful motor.",
+    "price": 349.99,
+    "category": "Outdoor",
+    "ratings": 4.6,
+    "creationDate": "2024-09-07T12:15 AM",
+    "brandName": "UrbanStyle"
+
+  },
+  {
+    "productName": "Drone with Camera",
+    "productImage": "https://i.pinimg.com/564x/1c/06/a7/1c06a7ee9933ff45bb4990010236564a.jpg",
+    "description": "Quadcopter drone with a high-resolution camera and multiple flight modes.",
+    "price": 249.99,
+    "category": "Electronics",
+    "ratings": 4.7,
+    "creationDate": "2024-09-08T01:30 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Robot Vacuum Cleaner",
+    "productImage": "https://i.pinimg.com/564x/bd/6a/ff/bd6aff73ef993b972e18957530fc7da0.jpg",
+    "description": "Automatic robot vacuum cleaner with smart navigation and self-charging.",
+    "price": 199.99,
+    "category": "Home",
+    "ratings": 4.8,
+    "creationDate": "2024-09-09T02:45 AM",
+    "brandName": "EcoLife"
+  },
+  {
+    "productName": "Portable Power Bank",
+    "productImage": "https://i.pinimg.com/564x/66/cc/40/66cc40c98b5d88db9f3b2d8b050ff2bb.jpg",
+    "description": "High-capacity portable power bank with fast charging technology.",
+    "price": 49.99,
+    "category": "Electronics",
+    "ratings": 4.5,
+    "creationDate": "2024-08-30T10:00 AM",
+    "brandName": "TechNova"
+  },
+  {
+    "productName": "Smart Thermostat",
+    "productImage": "https://i.pinimg.com/564x/b0/03/38/b003380344ec699702b343e566662f87.jpg",
+    "description": "Wi-Fi enabled smart thermostat for automated temperature control.",
+    "price": 129.99,
+    "category": "Home Automation",
+    "ratings": 4.6,
+    "creationDate": "2024-08-31T02:00 PM",
+    "brandName": "EcoLife"
+  }
+]
