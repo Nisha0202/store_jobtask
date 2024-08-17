@@ -17,8 +17,8 @@ export default function SignUp() {
     const {register, handleSubmit, reset,  formState: { errors }, } = useForm();
     const onSubmit = (data) => {
         const { email, pass, username, image} = data;
+        
         // Check password conditions
-       
         const hasMinLength = pass.length >= 6;
         if ( !hasMinLength) {
             setFormerror('Password must have at least 6 characters long');
@@ -68,7 +68,7 @@ export default function SignUp() {
                     {...register("pass", { required: true })}  />
                      {errors.pass && <span className='text-xs text-red-500'>required field</span>}
                 </label>
-                <button type='submit' className="btn w-full rounded-md text-white hover:bg-teal-700 bg-teal-900 font-bold">Create Account</button>
+                <button type='submit' className="btn w-full rounded-md text-white hover:bg-green-700 bg-green-800 font-bold">Create Account</button>
                 {formerror && <p className='text-xs font-bold max-w-xs text-wrap text-red-600'> {formerror}!</p>}
             </form>
             <p className='text-sm'>After regesiter you have to login to proceed.</p>

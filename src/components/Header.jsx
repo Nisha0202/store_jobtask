@@ -13,7 +13,8 @@ export default function Header() {
     <header>
       <div className="navbar bg-base-100 p-0">
         <div className="flex-1">
-          <a href='/' className="font-bold">Store</a>
+          <a href='/' className="font-bold" title='Home'> <img src="/vite.svg" alt="logo" className='g-6 w-6 inline-block mr-1' />
+          Store</a>
         </div>
         {isLogin ? (
           <div className="flex-none gap-2">
