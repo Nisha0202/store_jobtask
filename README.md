@@ -71,4 +71,4 @@ The project is divided into two main parts:
 
 ---
 
-This README should help set up and run your project locally and provide a good foundation for others to understand the structure and purpose of the project.
+This README helps to set up and run the project locally and provide a good foundation for others to understand the structure and purpose of the project.
