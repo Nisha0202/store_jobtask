@@ -40,16 +40,6 @@ export default function FirebaseProvider(props) {
     }
   };
 
-  // const googleLogin = () => {
-  //   signInWithPopup(auth, googleProvider)
-  //     .then((result) => {
-  //       setUsern(result.user);
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error with Google login:', error);
-  //     });
-  // };
-
   const googleLogin = async () => {
     try {
       const result = await signInWithPopup(auth, googleProvider);
@@ -61,31 +51,6 @@ export default function FirebaseProvider(props) {
     }
 };
 
-  // const googleLogin = (navigate) => {
-  //   signInWithPopup(auth, googleProvider)
-  //     .then(async (result) => {
-  //       const user = result.user;
-  //       const userInfo = {
-  //         email: user.email,
-  //         username: user.displayName,
-  //         image: user.photoURL,
-  //         role: 'student',
-  //       };
-  //       await saveUserInfo(userInfo);
-
-  //       const credential = GoogleAuthProvider.credentialFromResult(result);
-  //       const accessToken = credential.accessToken;
-  //       setUsern(user);
-  //       const token = await user.getIdToken();
-  //       localStorage.setItem('token', token);
-  //       localStorage.setItem('role', 'student');
-  //       navigate('/');
-       
-  //     })
-  //     .catch((error) => {
-  //       console.error('Google login error:', error);
-  //     });
-  // };
 
   const logOut = () => {
     signOut(auth)

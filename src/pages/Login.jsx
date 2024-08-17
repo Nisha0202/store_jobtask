@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineLoading3Quarters, AiOutlineMail } from "react-icons/ai";
 import { FaGoogle, FaGithub } from "react-icons/fa";
 import { Link, useNavigate } from 'react-router-dom';
 import { useForm } from "react-hook-form"
@@ -14,6 +14,8 @@ export default function Login() {
     const { signInUser } = useContext(AuthContext);
     const [formerror, setFormerror] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const [loading, setLoading] = useState(false);
+   
     const {
         register,
         handleSubmit,
@@ -22,6 +24,7 @@ export default function Login() {
     } = useForm();
     const navigate = useNavigate();
     const onSubmit = (data) => {
+        setLoading(true);
         const { email, pass } = data;
         const signIn = async (email, pass) => {
             try {
@@ -41,6 +44,7 @@ export default function Login() {
                 timer: 1500
             });
             reset();
+            setLoading(false);
             navigate('/');
         }).catch((error) => {
             console.error('Error during login:', error.message);
@@ -50,11 +54,13 @@ export default function Login() {
                 title: 'Oops...',
                 text: 'Invalid email or password.',
             });
+            setLoading(false);
         });
     };
 
 
     const handleGoogleLogin = async () => {
+       
         try {
             await googleLogin();
             Swal.fire({
@@ -63,6 +69,7 @@ export default function Login() {
                 showConfirmButton: false,
                 timer: 1500
             });
+            
             navigate('/'); // Navigate to the desired route after successful login
         } catch (error) {
             console.error('Error during Google login:', error);
@@ -71,6 +78,7 @@ export default function Login() {
                 title: 'Oops...',
                 text: 'Google login failed. Please try again.',
             });
+            
         }
     };
 
@@ -92,7 +100,18 @@ export default function Login() {
                         {...register("pass", { required: true })} />
                     {errors.pass && <span className='text-xs text-red-500'>required field</span>}
                 </label>
-                <button type='submit' className="btn rounded-md text-white hover:bg-teal-700 bg-teal-900 font-bold">Log In</button>
+                {/* <button type='submit' className="btn rounded-md text-white hover:bg-teal-700 bg-teal-900 font-bold">
+                    Log In
+                </button> */}
+                {loading ? (
+                    <button type='button' className="btn rounded-md text-white hover:bg-teal-700 bg-teal-900 font-bold">
+                        <AiOutlineLoading3Quarters className="animate-spin text-xl" />
+                    </button>
+                ) : (
+                    <button type='submit' className="btn rounded-md text-white hover:bg-teal-700 bg-teal-900 font-bold">
+                        Log In
+                    </button>
+                )}
 
             </form>
             <div className='flex flex-col md:flex-row mx-auto gap-4'>
@@ -100,9 +119,9 @@ export default function Login() {
                 <button className="btn rounded-md flex items-center gap-2" onClick={handleGoogleLogin}>
                     <FcGoogle className='text-xl' /> Log In with Google
                 </button>
-                {/* <button className="btn rounded-md   flex items-center gap-2" onClick={() => googleLogin()}>
-                    <FcGoogle className='text-xl'/> Log In with Google
-                </button> */}
+
+
+
             </div>
             <div>If you have already created account, please login.</div>
             <div>New to join? <Link to={'/signup'} className='text-teal-700 font-bold'>Create Account</Link></div>

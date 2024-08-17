@@ -1,3 +1,7 @@
+## github- https://github.com/Nisha0202/store_jobtask_frontend
+
+
+
 # MERN E-commerce Project
 
 This is a single-page e-commerce application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). The application includes features such as product sorting, filtering, pagination, search functionality, Firebase email/password and Google login, and more.
