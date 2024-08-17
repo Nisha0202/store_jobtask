@@ -1,13 +1,13 @@
 import React, { createContext, useEffect, useState } from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, updateProfile, signOut, reload } from "firebase/auth";
 import auth from '../firebase/firebase.config';
-
 export const AuthContext = createContext(null);
 
 export default function FirebaseProvider(props) {
   const googleProvider = new GoogleAuthProvider();
 
   const [usern, setUsern] = useState(null);
+
 
   const createUser = (email, password, username, image) => {
     return new Promise(async (resolve, reject) => {
@@ -40,15 +40,52 @@ export default function FirebaseProvider(props) {
     }
   };
 
-  const googleLogin = () => {
-    signInWithPopup(auth, googleProvider)
-      .then((result) => {
-        setUsern(result.user);
-      })
-      .catch((error) => {
-        console.error('Error with Google login:', error);
-      });
-  };
+  // const googleLogin = () => {
+  //   signInWithPopup(auth, googleProvider)
+  //     .then((result) => {
+  //       setUsern(result.user);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error with Google login:', error);
+  //     });
+  // };
+
+  const googleLogin = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      setUsern(result.user);
+      return result.user;
+    } catch (error) {
+      console.error('Error with Google login:', error);
+      throw error; // Reject the Promise with error
+    }
+};
+
+  // const googleLogin = (navigate) => {
+  //   signInWithPopup(auth, googleProvider)
+  //     .then(async (result) => {
+  //       const user = result.user;
+  //       const userInfo = {
+  //         email: user.email,
+  //         username: user.displayName,
+  //         image: user.photoURL,
+  //         role: 'student',
+  //       };
+  //       await saveUserInfo(userInfo);
+
+  //       const credential = GoogleAuthProvider.credentialFromResult(result);
+  //       const accessToken = credential.accessToken;
+  //       setUsern(user);
+  //       const token = await user.getIdToken();
+  //       localStorage.setItem('token', token);
+  //       localStorage.setItem('role', 'student');
+  //       navigate('/');
+       
+  //     })
+  //     .catch((error) => {
+  //       console.error('Google login error:', error);
+  //     });
+  // };
 
   const logOut = () => {
     signOut(auth)

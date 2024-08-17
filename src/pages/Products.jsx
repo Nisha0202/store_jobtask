@@ -221,7 +221,7 @@ export default function Products() {
         {Array.isArray(products) && products.length > 0 ? (
           products.map((product, index) => (
             <div key={index} className="max-w-80 mx-auto h-[420px] bg-white border border-gray-200 rounded-lg overflow-hidden">
-              <img src={product.productImage} alt={product.productName} className="w-full h-52 object-cover" />
+              <img src={product.productImage} alt={product.productName} className="w-80 h-52 object-cover" />
               <div className="p-4 text-sm">
                 <h2 className="text-xl font-bold text-gray-800 mb-2">{product.productName}</h2>
                 <p className="text-gray-600 mb-4">{product.description}</p>
