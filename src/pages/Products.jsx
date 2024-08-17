@@ -17,13 +17,35 @@ export default function Products() {
     order: 'asc'
   });
 
+  // const handlePriceRangeChange = (minPrice, maxPrice) => {
+  //   if (minPrice == '' && maxPrice == '') {
+  //     priceRange: '';
+  //   } else {
+  //     setFilters(prevFilters => ({
+  //       ...prevFilters,
+  //       priceRange: `${minPrice}-${maxPrice}`,
+  //     }));
+  //   }
+
+  //   setPage(1); // Reset to page 1 on new filter
+
+  // };
   const handlePriceRangeChange = (minPrice, maxPrice) => {
-    setFilters(prevFilters => ({
-      ...prevFilters,
-      priceRange: `${minPrice}-${maxPrice}`,
-    }));
+    if (minPrice === '' && maxPrice === '') {
+      setFilters(prevFilters => ({
+        ...prevFilters,
+        priceRange: null, // or you can use ''
+      }));
+    } else {
+      setFilters(prevFilters => ({
+        ...prevFilters,
+        priceRange: `${minPrice}-${maxPrice}`,
+      }));
+    }
+  
     setPage(1); // Reset to page 1 on new filter
   };
+  
 
 
   const fetchProducts = async () => {
@@ -104,9 +126,6 @@ export default function Products() {
     setFilters(prevFilters => ({ ...prevFilters, search: '' }));
   };
 
-  // const handlePriceRangeChange = (priceRange) => {
-  //   handleFilterChange({ target: { name: 'priceRange', value: priceRange } });
-  // };
 
   return (
     <div className=''>
@@ -158,17 +177,17 @@ export default function Products() {
               </details>
             </li>
             <li>
-                <details>
-                  <summary>Price Range</summary>
-                  <ul className='z-20'>
-                    <li><a onClick={() => handlePriceRangeChange(10, 30)}>$10 - $30</a></li>
-                    <li><a onClick={() => handlePriceRangeChange(30, 60)}>$30 - $60</a></li>
-                    <li><a onClick={() => handlePriceRangeChange(60, 100)}>$60 - $100</a></li>
-                    <li><a onClick={() => handlePriceRangeChange(100, 200)}>$100 - $200</a></li>
-                    <li><a onClick={() => handlePriceRangeChange('', '')}>Clear</a></li>
-                  </ul>
-                </details>
-              
+              <details>
+                <summary>Price Range</summary>
+                <ul className='z-20'>
+                  <li><a onClick={() => handlePriceRangeChange(10, 30)}>$10 - $30</a></li>
+                  <li><a onClick={() => handlePriceRangeChange(30, 60)}>$30 - $60</a></li>
+                  <li><a onClick={() => handlePriceRangeChange(60, 100)}>$60 - $100</a></li>
+                  <li><a onClick={() => handlePriceRangeChange(100, 200)}>$100 - $200</a></li>
+                  <li><a onClick={() => handlePriceRangeChange('', '')}>Clear</a></li>
+                </ul>
+              </details>
+
 
             </li>
             <li>
@@ -199,7 +218,7 @@ export default function Products() {
       <div className="product-list grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-12 pt-6 lg:pt-12 mb-6 relative min-h-[calc(100vh-100px)]">
         {Array.isArray(products) && products.length > 0 ? (
           products.map((product, index) => (
-            <div key={index} className="max-w-80 mx-auto bg-white border border-gray-200 rounded-lg overflow-hidden">
+            <div key={index} className="max-w-80 mx-auto h-[420px] bg-white border border-gray-200 rounded-lg overflow-hidden">
               <img src={product.productImage} alt={product.productName} className="w-full h-52 object-cover" />
               <div className="p-4 text-sm">
                 <h2 className="text-xl font-bold text-gray-800 mb-2">{product.productName}</h2>
