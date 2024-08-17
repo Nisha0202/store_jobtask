@@ -24,7 +24,7 @@ export default function Header() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                className="menu menu-sm dropdown-content bg-base-300 rounded-box font-bold z-[1] mt-3 w-44 p-2 shadow">
                 <li><a onClick={logOut}>Logout</a></li>
               </ul>
             </div>
@@ -37,7 +37,7 @@ export default function Header() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                className="menu menu-sm dropdown-content bg-base-200 rounded-box z-[1] mt-3 w-44 p-2 shadow">
                 <li className='text-green-600 font-semibold'><a href='/login'>Log In</a></li>
                 <li className='text-green-600 font-semibold mt-1'><a href='/signup'>Sign Up</a></li>
               </ul>

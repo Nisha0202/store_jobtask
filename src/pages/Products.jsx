@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
+import { AuthContext } from '../FirebaseProbider/FirbaseProvider';
 
 
 export default function Products() {
@@ -8,6 +9,12 @@ export default function Products() {
   const [error, setError] = useState(null);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
+  const { usern } = useContext(AuthContext);
+  const [isLogin, setLogin] = useState(false);
+  useEffect(() => {
+    setLogin(!!usern);
+  }, [usern]);
+
   const [filters, setFilters] = useState({
     search: '',
     brand: '',
@@ -17,24 +24,11 @@ export default function Products() {
     order: 'asc'
   });
 
-  // const handlePriceRangeChange = (minPrice, maxPrice) => {
-  //   if (minPrice == '' && maxPrice == '') {
-  //     priceRange: '';
-  //   } else {
-  //     setFilters(prevFilters => ({
-  //       ...prevFilters,
-  //       priceRange: `${minPrice}-${maxPrice}`,
-  //     }));
-  //   }
-
-  //   setPage(1); // Reset to page 1 on new filter
-
-  // };
   const handlePriceRangeChange = (minPrice, maxPrice) => {
     if (minPrice === '' && maxPrice === '') {
       setFilters(prevFilters => ({
         ...prevFilters,
-        priceRange: null, // or you can use ''
+        priceRange: null, // clear
       }));
     } else {
       setFilters(prevFilters => ({
@@ -130,7 +124,9 @@ export default function Products() {
   return (
     <div className=''>
       {/* Filters */}
-      <div className="filters mb-1 flex flex-col lg:flex-row gap-4 items-center justify-between">
+      {isLogin && 
+      
+        <div className="filters mb-1 flex flex-col lg:flex-row gap-4 items-center justify-between">
         <div className='w-full'>
           <input
             type="text"
@@ -213,6 +209,9 @@ export default function Products() {
           </ul>
         </div>
       </div>
+      
+      }
+    
 
       {/* Product List */}
       <div className="product-list grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pb-12 pt-6 lg:pt-12 mb-6 relative min-h-[calc(100vh-100px)]">
