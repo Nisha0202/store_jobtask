@@ -44,7 +44,7 @@ export default function Products() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/products', {
+      const response = await axios.get('https://store-backendd.vercel.app/products', {
         params: {
           page,
           limit: 9,
@@ -62,7 +62,9 @@ export default function Products() {
     } catch (error) {
       setError(error.message || 'Failed to fetch products');
     } finally {
-      setLoading(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000); // 1 seconds
     }
   };
 
@@ -90,6 +92,7 @@ export default function Products() {
   };
 
   const handlePageChange = (newPage) => {
+    setLoading(true);
     setPage(newPage);
   };
 
