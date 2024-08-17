@@ -214,6 +214,12 @@ export default function Products() {
       </div>
       
       }
+      {!isLogin &&
+      <div className='mt-2'> Please Login to see more functionalities.
+        
+      </div>
+      
+      }
     
 
       {/* Product List */}
